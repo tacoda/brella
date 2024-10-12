@@ -10,7 +10,7 @@ import (
 	"log"
 	"os"
 	"sort"
-	"tacoda/tri/todo"
+	"tacoda/togo/todo"
 	"text/tabwriter"
 )
 

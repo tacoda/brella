@@ -10,7 +10,7 @@ import (
 	"log"
 	"sort"
 	"strconv"
-	"tacoda/tri/todo"
+	"tacoda/togo/todo"
 )
 
 // doneCmd represents the done command

@@ -5,9 +5,10 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/mitchellh/go-homedir"
 	"log"
 	"os"
+
+	"github.com/mitchellh/go-homedir"
 
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
@@ -19,9 +20,9 @@ var dataFile string
 
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
-	Use:   "tri",
-	Short: "Tri is a todo application",
-	Long: `Tri will help you get more done in less time.
+	Use:   "togo",
+	Short: "Togo is a todo application",
+	Long: `Togo will help you get more done in less time.
 	It's designed to be as simple as possible to help
 	you accomplish your goals.`,
 	// Uncomment the following line if your bare application
@@ -43,7 +44,7 @@ func init() {
 	// Cobra supports persistent flags, which, if defined here,
 	// will be global for your application.
 	cobra.OnInitialize(initConfig)
-	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.tri.yaml)")
+	rootCmd.PersistentFlags().StringVar(&cfgFile, "config", "", "config file (default is $HOME/.togo.yaml)")
 
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
@@ -59,10 +60,10 @@ func init() {
 }
 
 func initConfig() {
-	viper.SetConfigName(".tri")
+	viper.SetConfigName(".togo")
 	viper.AddConfigPath("$HOME")
 	viper.AutomaticEnv()
-	viper.SetEnvPrefix("tri")
+	viper.SetEnvPrefix("togo")
 
 	if err := viper.ReadInConfig(); err == nil {
 		fmt.Println("Using config file:", viper.ConfigFileUsed())

@@ -8,7 +8,7 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"log"
-	"tacoda/tri/todo"
+	"tacoda/togo/todo"
 )
 
 // addCmd represents the add command

@@ -1,4 +1,4 @@
-module tacoda/tri
+module tacoda/togo
 
 go 1.21.3
 
