@@ -5,10 +5,11 @@ package cmd
 
 import (
 	"fmt"
+	"log"
+	"tacoda/brella/todo"
+
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"log"
-	"tacoda/togo/todo"
 )
 
 // addCmd represents the add command

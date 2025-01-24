@@ -5,12 +5,13 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
 	"log"
 	"sort"
 	"strconv"
-	"tacoda/togo/todo"
+	"tacoda/brella/todo"
+
+	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
 // doneCmd represents the done command

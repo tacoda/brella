@@ -1,4 +1,4 @@
-module tacoda/togo
+module tacoda/brella
 
 go 1.21.3
 

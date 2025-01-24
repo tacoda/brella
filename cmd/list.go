@@ -5,13 +5,14 @@ package cmd
 
 import (
 	"fmt"
-	"github.com/spf13/cobra"
-	"github.com/spf13/viper"
 	"log"
 	"os"
 	"sort"
-	"tacoda/togo/todo"
+	"tacoda/brella/todo"
 	"text/tabwriter"
+
+	"github.com/spf13/cobra"
+	"github.com/spf13/viper"
 )
 
 // lsCmd represents the ls command

@@ -1,3 +1,3 @@
-# Togo
+# Brella
 
-Togo is a todo application
+Brella is a todo application
