@@ -56,10 +56,17 @@ func init() {
 		"datafile",
 		home+string(os.PathSeparator)+".tridos.json",
 		"data file to store todos")
+	err = viper.BindPFlag("datafile", rootCmd.PersistentFlags().Lookup("datafile"))
+	if err != nil {
+		log.Fatalf("unable to bind datafile flag: %v", err)
+	}
 	rootCmd.Flags().BoolP("toggle", "t", false, "Help message for toggle")
 }
 
 func initConfig() {
+	if cfgFile != "" {
+		viper.SetConfigFile(cfgFile)
+	}
 	viper.SetConfigName(".brella")
 	viper.AddConfigPath("$HOME")
 	viper.AutomaticEnv()

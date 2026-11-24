@@ -4,7 +4,6 @@ Copyright © 2023 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"fmt"
 	"log"
 	"tacoda/brella/todo"
 
@@ -48,6 +47,6 @@ func addRun(cmd *cobra.Command, args []string) {
 	}
 	err = todo.SaveItems(viper.GetString("datafile"), items)
 	if err != nil {
-		fmt.Errorf("%v", err)
+		log.Printf("%v", err)
 	}
 }
